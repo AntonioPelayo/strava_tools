@@ -18,7 +18,7 @@ def handle_status_code(r):
     if r.status_code == 200:
         return True
 
-    message = messages.get(r.status_code, "Unknown status code")
+    message = messages.get(r.status_code, f"Unknown status code.\n{r.json()}")
     print(message)
 
     sys.exit(1)
