@@ -1,4 +1,7 @@
+*temp*
+
 __pycache__/
+strava_tools.egg-info/
 venv/
 
 .env

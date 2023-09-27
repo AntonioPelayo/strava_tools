@@ -1,13 +1,12 @@
 import sys
 from datetime import datetime
 
-import dotenv
 import requests
 
-from utils.env_utils import env_get, env_set
-from utils.utils import handle_status_code
+from strava_tools.utils.env_utils import env_get, env_set
+from strava_tools.utils.utils import handle_status_code
 
-from strava_api_endpoints import StravaAPIEndpoints
+from strava_tools.strava_api_endpoints import StravaAPIEndpoints
 
 def access_token_expiration_date():
     """
