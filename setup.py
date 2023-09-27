@@ -15,6 +15,13 @@ setup(
         'python-dotenv',
         'requests',
     ],
+    entry_points={
+        'console_scripts': [
+            'access_token_expiration=strava_tools.bin.access_token_expiration:main',
+            'refresh_access_token=strava_tools.bin.refresh_access_token:main',
+            'test_api_request=strava_tools.bin.test_api_request:main',
+        ]
+    },
     include_package_data=True,
     classifiers=[
         'Programming Language :: Python :: 3.9',

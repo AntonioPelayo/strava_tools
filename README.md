@@ -12,3 +12,15 @@ python3.10 -m venv venv
 source venv/bin/activate
 pip install requests python-dotenv
 ```
+
+To run scripts within `bin/` you must also install `strava_tools` as a package:
+
+```bash
+pip install -e .
+```
+
+Then you can run scripts from the root directory of the repository:
+
+```bash
+python bin/test_api_request.py
+```
